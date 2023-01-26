@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <script src="font.js"></script>
+    <title>간단한 자바 스크립트</title>
+
+</head>
+<body>
+
+<h4> 자바 스크립트 이용해서 기능 구현 HTML 연동 </h4>
+
+<input type="text" id="myName" placeholder="단어를 입력 하세요">
+<input type="button" value="미리보기" onclick="namePrint()">
+<br>
+<div id="result"></div>
+
+<br>
+<label>색상 : </label>
+
+select 의 경우 하나의 값만 가져오기 때문에 getElementById를 통해 가져 오면 된다.
+
+<select id="col">
+    <option value="red">빨강</option>
+    <option value="green">초록</option>
+    <option value="blue">파랑</option>
+</select>
+<br>
+<label>크기 : </label>
+<select id="fontsize">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+</select>
+<br>
+<br>
+<input type="checkbox" value="strike" name="font">취소선
+<input type="checkbox" value="big" name="font">크게
+<input type="checkbox" value="small" name="font">작게
+<input type="checkbox" value="bold" name="font">두껍게
+<input type="checkbox" value="italics" name="font">기울임
+<br>
+<input type="checkbox" value="sup" name="font">위첨자
+<input type="checkbox" value="sub" name="font">아래첨자
+<input type="checkbox" value="toLowerCase" name="font">소문자로
+<input type="checkbox" value="toUpperCase" name="font">대문자로
+
+
+<hr>
+<!--<br>-->
+<!--<br>-->
+
+<!--getElementById 메서드로 객체 찾기-->
+<!--<br>-->
+<!--document.getElementById를 통해 textbox(가져온 답을  id 값을 가져옴(단일값)-->
+<!--<br>-->
+<!--textbox의 값을 출력 할려면 .value로 접근 해야 된다-->
+<!--<br>-->
+<!--onclick() 함수는 해당 버튼 이벤트 클릭시...-->
+<!--<br>-->
+
+
+<!--<input type="text" id="myName" placeholder="이름을 입력 하세요">-->
+<!--<input type="button" value="인사하기" onclick="sayHello()">-->
+
+<!--<br>-->
+<!--<hr>-->
+<!--getElementsByName 은 그룹으로 묶은 데이터를 가져 올때는 해당 함수 사용-->
+
+<!--<h4>제일 좋아하는 과목은?</h4>-->
+<!--<input type="radio" name="sub" value="HTML">HTML<br>-->
+<!--<input type="radio" name="sub" value="CSS">CSS<br>-->
+<!--<input type="radio" name="sub" value="자바스크립트">자바스크립트<br>-->
+<!--<br>-->
+<!--<input type="button" value="답안지 제출" onclick="findSubject()">-->
+
+
+<!--<hr>-->
+<!--getElementsByTagName으로 찾기<br>-->
+<!--input 태그의 모든 값을 가져오는데 radio type의 버튼만 필요하기 조건식을 줌<br>-->
+
+<!--<h4>제일 좋아하는 과목은?</h4>-->
+<!--<input type="radio" name="sub" value="HTML">HTML<br>-->
+<!--<input type="radio" name="sub" value="CSS">CSS<br>-->
+<!--<input type="radio" name="sub" value="자바스크립트">자바스크립트<br>-->
+<!--<br>-->
+<!--<input type="button" value="답안지 제출" onclick="findSubject2()">-->
+
+
+</body>
+</html>
