@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+
+  <style>
+
+    table, th, td { boder:1 px solid #000;  border-collapse: collapse; }
+
+  </style>
+
+  <title>회원 가입 페이지</title>
+</head>
+<body>
+<audio controls>
+  <source src="test.mp3" type="audio/mp3">
+</audio>
+
+<form action="mailto:chanyong.jeong@kakao.com" method="post">
+  <table style="width: 60%; margin-left: auto; margin-right: auto" border="collapse">
+    <tr>
+      <th colspan="2" style="background: bisque" >회원 기본 정보</th>
+    </tr>
+    <tr>
+      <th style="width: 20%;">아이디</th>
+      <td> <input type="text" name="id" id="id" placeholder="ID 입력"> 4~12자의 영문 대소문자와 숫자로만 입력 </td>
+    </tr>
+    <tr>
+      <th>비밀번호</th>
+      <td> <input type="password" name="pw" placeholder="비밀번호 입력"> 4~12자의 영문 대소문자와 숫자로만 입력 </td>
+    </tr>
+    <tr>
+      <th>비밀번호확인</th>
+      <td> <input type="password" name="pw" placeholder="비밀번호 확인"> </td>
+    </tr>
+    <tr>
+      <th>메일주소</th>
+      <td> <input type="text" name="mail" placeholder="메일입력"> 예) id@domain.com </td>
+    </tr>
+    <tr>
+      <th>이름</th>
+      <td> <input type="text" name="fullname" placeholder="이름입력"> </td>
+    </tr>
+    <tr>
+      <th colspan="2" style="background: bisque">개인 신상 정보</th>
+    </tr>
+    <tr>
+      <th>주민등록번호</th>
+      <td> <input type="text" name="num" placeholder="주민번호"> 예)1234561234567</td>
+    </tr>
+    <tr>
+      <th>생일</th>
+      <td>
+        <input type="text" size="10" placeholder="년도입력"><label>년</label>
+        <select id="month" name="month">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+          <label>월</label>
+        <select id="day" name="day">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+          <option value="17">17</option>
+          <option value="18">18</option>
+          <option value="19">19</option>
+          <option value="20">20</option>
+          <option value="21">21</option>
+          <option value="22">22</option>
+          <option value="23">23</option>
+          <option value="24">24</option>
+          <option value="25">25</option>
+          <option value="26">26</option>
+          <option value="27">27</option>
+          <option value="28">28</option>
+          <option value="29">29</option>
+          <option value="30">30</option>
+          <option value="31">31</option>
+        </select>
+          <label>일</label>
+      </td>
+    </tr>
+    <tr>
+      <th>관심분야</th>
+      <td>
+
+          <input type="checkbox" name="interest" value="컴퓨터">컴퓨터</input>
+          <input type="checkbox" name="interest" value="인터넷">인터넷</input>
+          <input type="checkbox" name="interest" value="여행">여행</input>
+          <input type="checkbox" name="interest" value="영화감상">영화감상</input>
+          <input type="checkbox" name="interest" value="음악감상">음악감상</input>
+
+      </td>
+    </tr>
+    <tr>
+      <th>자기소개</th>
+      <td>
+        <textarea rows="7" cols="90" name="memo"></textarea>
+      </td>
+    </tr>
+
+
+
+  </table>
+  <br>
+
+
+<div align="center">
+
+  <input type="submit"  value="회원가입"></a>
+  <input type="reset" value="다시입력">
+
+</div>
+
+
+
+
+
+
+</form>
+
+</body>
+</html>
