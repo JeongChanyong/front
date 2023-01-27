@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="calc.js"></script>
+  <meta charset="UTF-8">
+  <title>계산기 만들기</title>
+
+
+</head>
+<body>
+
+<input type="text" id="display" value="0" size="30">
+<br>
+<br>
+<input type="button" value="Clear" style="color: blue; width: 110px" onclick="clear1()">
+<input type="button" value="=" style="color: blue; width: 110px" onclick="clickEqual()">
+
+<table>
+  <tr>
+    <td><input type="button" style="color: blue; width: 40px" id="num1" value="1" onclick="clicknumber('1')"></td>
+    <td><input type="submit" style="color: blue; width: 40px" id="num2" value="2" onclick="clicknumber('2')"></td>
+    <td><input type="submit" style="color: blue; width: 40px" id="num3" value="3" onclick="clicknumber('3')"></td>
+    <td><input type="submit" style="color: darkorange; width: 40px" id="sum" value="+" onclick="clickOp('+')"></td>
+    <td><input type="submit" style="color: red; width: 40px" id="" value="x^y" onclick="clickOp('^')"></td>
+  </tr>
+  <tr>
+    <td><input type="submit" style="color: blue; width: 40px" id="num4" value="4" onclick="clicknumber('4')"></td>
+    <td><input type="submit" style="color: blue; width: 40px" id="num5" value="5" onclick="clicknumber('5')"></td>
+    <td><input type="submit" style="color: blue; width: 40px" id="num6" value="6" onclick="clicknumber('6')"></td>
+    <td><input type="submit" style="color: darkorange; width: 40px" id="min" value="-" onclick="clickOp('-')"></td>
+    <td><input type="submit" style="color: red; width: 40px" value="sin" id="sin" onclick="sin()"></td>
+  </tr>
+  <tr>
+    <td><input type="submit" style="color: blue; width: 40px"  id="num7" value="7" onclick="clicknumber('7')"></td>
+    <td><input type="submit" style="color: blue; width: 40px" id="num8" value="8" onclick="clicknumber('8')"></td>
+    <td><input type="submit" style="color: blue; width: 40px" id="num9" value="9" onclick="clicknumber('9')"></td>
+    <td><input type="submit" style="color: darkorange; width: 40px" id="mul" value="*" onclick="clickOp('*')"></td>
+    <td><input type="submit" style="color: red; width: 40px" value="cos" id="cos" onclick="cos()"></td>
+  </tr>
+  <tr>
+    <td><input type="submit" style="color: blue; width: 40px" id="num0" value="0" onclick="clicknumber('0')"></td>
+    <td><input type="submit" style="color: blue; width: 40px" value="+/-" onclick="clickConversion()"></td>
+    <td><input type="submit" style="color: blue; width: 40px" value="." onclick="clickDot()"></td>
+    <td><input type="submit" style="color: darkorange; width: 40px" id="div" value="/" onclick="clickOp('/')"></td>
+    <td><input type="submit" style="color: red; width: 40px" value="tan" id="tan" onclick="tan()"></td>
+  </tr>
+</table>
+
+</body>
+</html>

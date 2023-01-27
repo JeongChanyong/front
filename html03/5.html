@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+      var color = 'red'; // 전역 변수
+
+
+      function foo(){
+          var color = 'blue'; //2
+            function bar() {
+              document.write(color) //1
+            }
+            return bar; // 함수 자체를 리턴....
+        }
+      var baz = foo(); // 3
+      baz(); //4
+
+      /**
+       * 클로즈의 장점
+       * 1. 정보를 보존 할수 있다. 외부 함수 실행이 끝나 더라도 외부함수의 데이터를 사용할 수 있다 (캡슐화)
+       * 2. 모듈화에 유리하다
+       * 3. 자바의 이너클래스라고 생각 하기... 이너 클래스에서 아우터 클래스 필드에 접근 가능 하듯이
+       *
+       * 이너에서 아우터의 필드를 사용하는 경우,
+       */
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

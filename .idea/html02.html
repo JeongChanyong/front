@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <style>
+
+    table, th, td { boder:1 px solid #000;  border-collapse: collapse; }
+
+  </style>
+
+  <title>Title</title>
+</head>
+<body>
+
+<table width="700" height="250" border="collapse">
+  <tr>
+    <td colspan="3" style="color: white" bgcolor="#5f9ea0">오늘의 수입/지출</td>
+  </tr>
+  <tr bgcolor="#a52a2a">
+    <td>내용</td>
+    <td>수입</td>
+    <td>지출</td>
+  <tr>
+    <td>월급</td>
+    <td>1,000,000</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>점심값</td>
+    <td></td>
+    <td>5000</td>
+  </tr>
+  <tr>
+    <td>부모님선물</td>
+    <td></td>
+    <td>30000</td>
+  </tr>
+  <tr>
+    <td rowspan="3" bgcolor="#ff7f50">총계</td>
+    <td>수입</td>
+    <td>지출</td>
+  </tr>
+  <tr>
+    <td>1,000,000</td>
+    <td>35,000</td>
+  </tr>
+  <tr>
+    <td>남은돈</td>
+    <td>965,000</td>
+  </tr>
+
+
+  </tr>
+
+</table>
+
+
+<h4>이름 : <input type="text" name="my_name" size="20" value="이름을 입력하세요"></h4>
+<h4>나이 : <input type="text" name="my_age" size="20" placeholder="나이를 입력하세요" maxlength="3"></h4>
+<h4>패스워드 : <input type="password" name="my_password" size="20" placeholder="****으로 표시" ></h4>
+
+
+
+<textarea name="my_intro" cols="20" rows="5"></textarea>
+
+<h2>라디오 버튼 만들기</h2>
+
+<h2>1. 여러분이 사용하는 CPU</h2>
+<input type="radio" name="cpu" value="코어2듀오" checked>코어2듀오</br>
+<input type="radio" name="cpu" value="코어듀오" >코어듀오</br>
+<input type="radio" name="cpu" value="펜티엄4" >펜티엄4</br>
+<input type="radio" name="cpu" value="펜티엄3" >펜티엄3</br>
+<h2>2. 여러분이 사용하는 메모리</h2>
+<input type="radio" name="memory" value="2048" checked>2GB</br>
+<input type="radio" name="memory" value="1024" >1GB</br>
+<input type="radio" name="memory" value="512" >512MB</br>
+<input type="radio" name="memory" value="256" >256MB</br>
+
+
+<h2>체크 박스 만들기</h2>
+
+<input type="checkbox" name="computer" value="cpu" checked>CPU<br>
+<input type="checkbox" name="computer" value="Memory" >메모리<br>
+<input type="checkbox" name="computer" value="HDD" >하드디스크<br>
+<input type="checkbox" name="computer" value="CDROM" >CD-ROM 드라이브<br>
+<input type="checkbox" name="computer" value="DVDROM" >DBD-ROM 드라이브<br>
+<input type="checkbox" name="computer" value="CDRWDVD" >CD-RW/DVD 콤보 드라이브<br>
+<input type="checkbox" name="computer" value="DVDMULTI" >DVD MULTI 드라이브<br>
+<input type="checkbox" name="computer" value="Keyboard" >키보드<br>
+<input type="checkbox" name="computer" value="Mouse" >마우스<br>
+
+<H2>드랍 다운 리스트와 리스트 상자</H2>
+
+<table>
+  <tr>
+    <td colspan="2">
+      <h2>가장 재미 있는것은 선택하세요</h2>
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+      <select name="items1">
+        <option value="HTML">HTML</option>
+        <option value="자바스크립트">자바스크립트</option>
+        <option value="CSS">CSS</option>
+      </select>
+    </td>
+    <td valign="top">
+      <select name="items2" size="3">
+        <option value="HTML">HTML</option>
+        <option value="자바스크립트">자바스크립트</option>
+        <option value="CSS">CSS</option>
+      </select>
+    </td>
+  </tr>
+</table>
+
+
+<h2>전송버튼, 입력 취소 버튼</h2>
+
+<h4>이름 : <input type="text" name="my_name" size="20" value="이름을 입력하세요"></h4>
+<h4>나이 : <input type="text" name="my_age" size="20" placeholder="나이를 입력하세요" maxlength="3"></h4>
+<h4>패스워드 : <input type="password" name="my_password" size="20" placeholder="****으로 표시" ></h4>
+
+<!--폼태그 안에 작성을 안했기 때문에 디자인만 있는 빈껍데기 버튼-->
+<input type="submit" value="전송하기">
+<input type="reset" value="다시입력">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

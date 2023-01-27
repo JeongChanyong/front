@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>화면 색상 바꾸기</title>
+    <script language="JavaScript">
+
+
+      function style1(color){
+
+          document.bgColor = color;
+
+      }
+    </script>
+
+
+</head>
+<body>
+
+<input type="radio" name="bgc" value="yellow" onclick="style1(this.value)">노란색<br>
+<input type="radio" name="bgc" value="green" onclick="style1(this.value)">녹색<br>
+<input type="radio" name="bgc" value="blue" onclick="style1(this.value)">파란색<br>
+<input type="radio" name="bgc" value="red" onclick="style1(this.value)">빨간색<br>
+
+</body>
+</html>

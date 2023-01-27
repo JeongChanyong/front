@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+      // const regex = /\d{3}-\d{4}-\d{4}/;
+      //
+      // a = '010-2222-3333';
+      // console.log(regex.test(a));
+
+      // flags 에 플래그 문자열이 들어간다.
+
+      const flags = 'i';
+      const regex = new RegExp('abc', flags);
+
+      // 리터럴로 슬래쉬 문자뒤에 바로 표현이 가능
+      const regex1 = /apple/i;
+      const regex2 = /apple/gm;
+
+      document.writeln(regex1.test("ABC"));
+
+
+
+
+    </script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
